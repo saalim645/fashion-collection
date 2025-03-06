@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout">
+        <h2>Billing Details</h2>
+        <form id="checkout-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="address" placeholder="Shipping Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <h3>Total: <span id="total-amount">$0.00</span></h3>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
